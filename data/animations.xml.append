@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<animSheet name="cvx_black_hole_gun" w="1365" h="169" fw="65" fh="169">weapons/cvx_black_hole_gun_strip21.png</animSheet>
+<weaponAnim name="cvx_black_hole_gun">
+	<sheet>cvx_black_hole_gun</sheet>
+	<desc length="21" x="0" y="0"/>
+	<chargedFrame>6</chargedFrame>
+	<fireFrame>12</fireFrame>
+	<firePoint x="49" y="48" />
+	<mountPoint x="21" y="128" />
+	<delayChargeAnim>0.975</delayChargeAnim>
+</weaponAnim>
+<animSheet name="cvx_black_hole_gun_icon" w="196" h="36" fw="98" fh="36">weapons/cvx_black_hole_gun_icon.png</animSheet>
+<anim name="cvx_black_hole_gun_icon">
+	<sheet>cvx_black_hole_gun_icon</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="cvx_black_hole_shot" w="29" h="18" fw="29" fh="18">weapons/cvx_black_hole_shot.png</animSheet>
+<anim name="cvx_black_hole_shot">
+	<sheet>cvx_black_hole_shot</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="cvx_black_hole_effect" w="350" h="70" fw="70" fh="70">effects/cvx_black_hole_effect.png</animSheet>
+<anim name="cvx_black_hole_effect">
+	<sheet>cvx_black_hole_effect</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>0.06</time>
+</anim>

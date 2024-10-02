@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cvx_black_hole_shoot volume="6">weapons/cvx_black_hole_shoot.ogg</cvx_black_hole_shoot>
+<cvx_black_hole_hit volume="6">explosions/cvx_black_hole_hit.ogg</cvx_black_hole_hit>

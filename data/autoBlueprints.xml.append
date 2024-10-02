@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ALL">
+    <mod-append:name>CVX_SINGULARITY_CANNON</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="BLUELIST_WEAPONS_HEAVY">
+    <mod-append:name>CVX_SINGULARITY_CANNON</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="BLUELIST_ARMOR">
+    <mod-append:name>CVX_OBSIDIAN_ARMOR</mod-append:name>
+</mod:findName>

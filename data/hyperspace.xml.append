@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<version>^1.14.0</version>
+
+<mod:findLike type="ships" limit="1">
+	<mod-append:ship name="PLAYER_SHIP_CVX_OBSIDIAN" a="true" b="false" c="false" />
+	<mod-append:customShip name="PLAYER_SHIP_CVX_OBSIDIAN">
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+	</mod-append:customShip>
+</mod:findLike>
+
+<mod:findLike type="augments" limit="1">
+	<mod-append:aug name="CVX_OBSIDIAN_ARMOR">
+        <function name="ROCK_ARMOR" value="0.10" useForReqs="true" warning="false"/>
+        <locked/>
+    </mod-append:aug>
+</mod:findLike>
+
+<mod:findLike type="scripts" limit="1">
+    <mod-append:script>data/obsidian_scripts/black-hole-gun.lua</mod-append:script>
+</mod:findLike>

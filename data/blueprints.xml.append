@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_CVX_OBSIDIAN" layout="mup_cvx_obs" img="mup_cvx_obs">
+	<class>Obsidian Cruiser</class>
+	<name>Retribution</name>
+	<desc>Not even the current crew of this mysterious ship know its true origin, though some of them belive it comes from a universe that was annihilated by the technology it carries.</desc>
+	<systemList>
+		<battery power="1" max="2" room="6" start="false" img="room_battery_14" />
+		<cloaking power="2" room="1" start="true" img="room_cloaking_3" />
+		<clonebay power="1" room="13" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="4" start="true" img="room_doors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="10" start="false" img="room_drones_3" />
+		<engines power="2" room="5" start="true" img="room_engines_cxv_obs">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="14" start="false" img="room_hacking_4" />
+		<medbay power="1" room="13" start="true" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="2" start="false" img="room_mind_11" />
+		<oxygen power="1" room="0" start="true" img="room_oxygen_7" />
+		<pilot power="1" room="9" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="3" start="true" img="room_sensors_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="7" start="false" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="12" start="false" />
+		<weapons power="4" max="8" room="15" start="true" img="room_weapons_5">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" count="4">
+		<weapon name="CVX_SINGULARITY_CANNON" />
+	</weaponList>
+	<droneList drones="4" count="2" />
+	<health amount="30" />
+	<maxPower amount="9" />
+	<crewCount amount="1" class="rock_outcast" />
+	<crewCount amount="1" class="engi_separatist" />
+	<crewCount amount="1" class="crystal" />
+	<crewCount amount="1" class="crystal_liberator" />
+	<aug name="CVX_OBSIDIAN_ARMOR" />
+	<aug name="FUEL_CONSERVER" />
+    <mv-mapImage>map_icon_mup_cvx_obs</mv-mapImage>
+</shipBlueprint>
+
+<weaponBlueprint name="CVX_SINGULARITY_CANNON">
+	<type>BURST</type>
+	<flavorType>Singularity Cannon</flavorType>
+	<title>Singularity Cannon</title>
+	<short>Singularity Cannon</short>
+	<desc>This terrifying weapon creates artificial singularities using fuel. The concentrated mass slows time around it and wreaks havok on systems until it fully decays.</desc>
+    <descriptionOverride>This terrifying weapon creates artificial singularities using fuel. The concentrated mass slows time around it and wreaks havok on systems until it fully decays.
+
+Stats:
+Required Power: 4
+Charge Time: 22 seconds
+Fuel Consumption: 1
+Accuracy Bonus: +80%
+
+Shot Radius: 17
+Shots Per Charge: 1
+
+2x hull damage on systemless rooms.
+Base Hull Damage: 4
+Total System Damage: 4
+Total Crew Damage: 60
+Shield Piercing: 10
+Pierces Energy Shields
+
+Breach Chance: 100% (Adjusted: 100%)
+Erosion Chance: 100%
+Erosion: 4 (15 seconds)
+
+Default Price: 100~   -   Selling Price: 50~
+    </descriptionOverride>
+    <tooltipOverride>Required Power: 4
+Charge Time: 22 seconds
+Fuel Consumption: 1
+Accuracy Bonus: +80%
+
+Shot Radius: 17
+Shots Per Charge: 1
+
+2x hull damage on systemless rooms.
+Base Hull Damage: 4
+Total System Damage: 4
+Total Crew Damage: 60
+Shield Piercing: 10
+Pierces Energy Shields
+
+Breach Chance: 100% (Adjusted: 100%)
+Erosion Chance: 100%
+Erosion: 4 (15 seconds)</tooltipOverride>
+	<tooltip>Defense laser; 1 damage, 1 shot. 9 second cooldown.</tooltip>
+	<radius>15</radius>
+	<spin>360</spin>
+	<speed>20</speed>
+	<damage>4</damage>
+	<hullBust>1</hullBust>
+	<accuracyMod>80</accuracyMod>
+	<mv-resources>
+		<fuel>1</fuel>
+	</mv-resources>
+	<shots>1</shots>
+	<fireTime>1</fireTime>
+    <erosionChance>10</erosionChance>
+	<erosion>
+		<speed>1.668</speed>
+		<maxSpeed>1.668</maxSpeed>
+		<time>15.0</time>
+		<maxTime>30.0</maxTime>
+		<systemRepairMultiplier>0.5</systemRepairMultiplier>
+		<erodeShields>false</erodeShields>
+	</erosion>
+	<sp>10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>10</breachChance>
+	<cooldown>22</cooldown>
+	<power>4</power>
+	<cost>100</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">cvx_black_hole_shot</projectile>
+	</projectiles>
+	<roomStatBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>0</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<duration>1.8</duration> <!-- At level 2, time is slowed to 12%, and 0.12*15 is 1.8 -->
+			<roomAnim renderLayer="3">
+				<anim animType="center">cvx_black_hole_effect</anim>
+			</roomAnim>
+		</statBoost>
+	</roomStatBoosts>
+	<launchSounds>
+		<sound>cvx_black_hole_shoot</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>cvx_black_hole_hit</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>cvx_black_hole_gun</weaponArt>
+    <iconReplace>cvx_black_hole_gun_icon</iconReplace>
+</weaponBlueprint>
+
+<augBlueprint name="CVX_OBSIDIAN_ARMOR">
+    <title>Obsidian Construction</title>
+    <desc>Your hull has a 10% chance to negate incoming hull damage. Whenever you extingish every fire on your ship, you recover 1 hull point. Only provides a 50% chance to recover hull while in close proximity to a sun.
+Provides an opportunity to ram the enemy ship before combat.</desc>
+    <cost>80</cost>
+    <bp>8</bp>
+    <rarity>0</rarity>
+    <stackable>true</stackable>
+    <value>0.10</value>
+</augBlueprint>
