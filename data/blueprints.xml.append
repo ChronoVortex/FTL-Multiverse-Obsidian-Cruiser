@@ -3,7 +3,7 @@
 <shipBlueprint name="PLAYER_SHIP_CVX_OBSIDIAN" layout="mup_cvx_obs" img="mup_cvx_obs">
 	<class>Obsidian Cruiser</class>
 	<name>Retribution</name>
-	<desc>Not even the current crew of this mysterious ship know its true origin, though some of them belive it comes from a universe that was annihilated by the technology it carries.</desc>
+	<desc>Not even the current crew of this mysterious ship know its true origin, though some of them believe it comes from a universe that was annihilated by the technology it carries.</desc>
 	<systemList>
 		<battery power="1" max="2" room="6" start="false" img="room_battery_14" />
 		<cloaking power="2" room="1" start="true" img="room_cloaking_3" />
